@@ -1,0 +1,161 @@
+<!-- Updated pricing.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Verve</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .btn {
+            font-weight: bold;
+            border-radius: 25px;
+            padding: 10px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                margin-bottom: 20px;
+            }
+        }
+
+        .bg-basic {
+            background-color: #4A90E2;
+        }
+
+        .bg-standard {
+            background-color: #50E3C2;
+        }
+
+        .bg-premium {
+            background-color: #9013FE;
+        }
+
+        .text-basic {
+            color: #4A90E2;
+        }
+
+        .text-standard {
+            color: #50E3C2;
+        }
+
+        .text-premium {
+            color: #9013FE;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">verve</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pricing" class="container-fluid bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Pricing Plans</h2>
+                <p class="text-center mb-5">Choose a plan that suits your needs. Transparent pricing for every service.</p>
+                <div class="row text-center">
+                    <!-- Basic Plan -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header bg-basic text-white">
+                                <h3>Basic</h3>
+                                <p class="lead">€50–€100</p>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>One-page design</li>
+                                    <li>3 Revisions</li>
+                                    <li>Delivery in 7 days</li>
+                                </ul>
+                                <a href="index.html#contact" class="btn btn-outline-basic">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Standard Plan -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header bg-standard text-white">
+                                <h3>Standard</h3>
+                                <p class="lead">€150–€300</p>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>Multi-page responsive design</li>
+                                    <li>5 Revisions</li>
+                                    <li>Delivery in 5 days</li>
+                                </ul>
+                                <a href="index.html#contact" class="btn btn-outline-standard">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Premium Plan -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header bg-premium text-white">
+                                <h3>Premium</h3>
+                                <p class="lead">€500+</p>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li>Full website/web app development</li>
+                                    <li>Unlimited Revisions</li>
+                                    <li>Delivery in 3 days</li>
+                                </ul>
+                                <a href="index.html#contact" class="btn btn-outline-premium">Choose Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid text-center py-3 bg-dark text-white">
+        <p>&copy; 2024 Verve. All Rights Reserved. | <a href="data-privacy.html" class="text-white">Privacy Policy</a> | <a href="imprint.html" class="text-white">Imprint</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
